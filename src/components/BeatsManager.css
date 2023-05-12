@@ -1,5 +1,22 @@
 .beatsContainer {
-    flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .beatsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .chordContainer {
+        top: 50px;
+        right: 16px;
+        float: right;
+        position: absolute;
+    }
 }

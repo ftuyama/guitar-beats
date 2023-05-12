@@ -7,8 +7,8 @@ import './Beats.css';
 
 function Beats({ beat }) {
   return (
-    <Card sx={{ minWidth: 275 }} >
-      <CardContent>
+    <Card className="beatsCard">
+      <CardContent className="beatsCardContent">
         <p>
           Beats for {beat["name"]}
         </p>
@@ -16,7 +16,7 @@ function Beats({ beat }) {
 
         <div className="arrowContainer">
             { beat['beats'].map((arrow) => (
-                <div key={arrow}>
+                <div key={arrow} className="arrow">
                     { arrow === 'up' &&
                         <FontAwesomeIcon icon={icon({name: 'arrow-up' })} />
                     }

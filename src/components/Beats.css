@@ -1,5 +1,19 @@
+.arrow {
+    margin: 8px;
+    /* color: #e67e22; */
+}
+
 .arrowContainer {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
+}
+
+.beatsCard {
+    background-color: #606b76 !important;
+    flex: 1 1 0px;
+    flex-basis: 100%;
+    margin: 16px;
+    min-width: 275px;
+    padding: 8px 32px;
 }
