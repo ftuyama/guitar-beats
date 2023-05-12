@@ -1,0 +1,5 @@
+.beatsContainer {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
