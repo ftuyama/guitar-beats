@@ -1,8 +1,10 @@
 # Guitar Beats
 
-<img src="https://github.com/ftuyama/guitar-beats/blob/main/screenshot.png" width="400">
+Practice guitar beats with a visual metronome. Improve your rhythm and timing skills.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://github.com/ftuyama/guitar-beats/blob/main/public/screenshot.png" width="400">
+
+<https://ftuyama.com/guitar-beats>
 
 ## Available Scripts
 
@@ -30,4 +32,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-

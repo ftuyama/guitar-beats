@@ -17,10 +17,10 @@ function Beats({ beat }) {
         <div className="arrowContainer">
             { beat['beats'].map((arrow) => (
                 <div key={arrow}>
-                    { arrow == 'up' &&
+                    { arrow === 'up' &&
                         <FontAwesomeIcon icon={icon({name: 'arrow-up' })} />
                     }
-                    { arrow == 'down' &&
+                    { arrow === 'down' &&
                         <FontAwesomeIcon icon={icon({name: 'arrow-down' })} />
                     }
 
