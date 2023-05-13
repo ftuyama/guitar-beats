@@ -1,0 +1,12 @@
+.metronomeCard {
+    background-color: #606b76 !important;
+    margin: 16px;
+    min-width: 275px;
+    padding: 8px 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .metronomeSlider .MuiSlider-markLabel {
+        display: none !important;
+    }
+}

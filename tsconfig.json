@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+      "baseUrl": "./src",
+      "checkJs": true,
       "target": "es6",
       "module": "esnext",
       "sourceMap": true,

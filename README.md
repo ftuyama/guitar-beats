@@ -2,9 +2,9 @@
 
 Practice guitar beats with a visual metronome. Improve your rhythm and timing skills.
 
-<img src="https://github.com/ftuyama/guitar-beats/blob/main/public/screenshot.png" width="400">
-
 <https://ftuyama.com/guitar-beats>
+
+<img src="https://github.com/ftuyama/guitar-beats/blob/main/public/screenshot.png" width="400">
 
 ## Available Scripts
 
