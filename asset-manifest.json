@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/guitar-beats/static/css/main.9be41f48.css",
-    "main.js": "/guitar-beats/static/js/main.262964c0.js",
+    "main.css": "/guitar-beats/static/css/main.cb1d3b4a.css",
+    "main.js": "/guitar-beats/static/js/main.63229922.js",
     "static/js/787.7fc56f07.chunk.js": "/guitar-beats/static/js/787.7fc56f07.chunk.js",
     "static/media/logo.svg": "/guitar-beats/static/media/logo.4c836925b11f0323fe3c3b043b47dba2.svg",
     "index.html": "/guitar-beats/index.html",
-    "main.9be41f48.css.map": "/guitar-beats/static/css/main.9be41f48.css.map",
-    "main.262964c0.js.map": "/guitar-beats/static/js/main.262964c0.js.map",
+    "main.cb1d3b4a.css.map": "/guitar-beats/static/css/main.cb1d3b4a.css.map",
+    "main.63229922.js.map": "/guitar-beats/static/js/main.63229922.js.map",
     "787.7fc56f07.chunk.js.map": "/guitar-beats/static/js/787.7fc56f07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9be41f48.css",
-    "static/js/main.262964c0.js"
+    "static/css/main.cb1d3b4a.css",
+    "static/js/main.63229922.js"
   ]
 }
