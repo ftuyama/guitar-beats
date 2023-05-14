@@ -7,9 +7,6 @@ import Chords from "./Chords";
 
 import beats from "../models/Beats";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
-
 function BeatsManager() {
   const [bpm, setBpm] = React.useState<number>(90);
 
@@ -18,10 +15,7 @@ function BeatsManager() {
   }
 
   return (
-    <div>
-      <p>
-        Guitar Beats <FontAwesomeIcon icon={icon({ name: "coffee" })} />
-      </p>
+    <div className="beatsManager">
       <small>Practice the guitar beats using a smart metronome!</small>
       <Metronome metronomeBpm={bpm} changeBpm={changeBpm} />
       <div className="beatsContainer">

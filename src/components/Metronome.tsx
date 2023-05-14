@@ -43,7 +43,7 @@ function Metronome({ metronomeBpm, changeBpm }) {
       <CardContent>
         <Grid container spacing={3} alignItems="center">
           <Grid item>
-            <p>Metronome</p>
+            <p className="metronomeText">Metronome</p>
           </Grid>
           <Grid item xs>
             <Slider
