@@ -6,17 +6,56 @@ import { icon } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import IconButton from "@mui/material/IconButton";
 
-function Beats({ beat }) {
+function Beats({ beat, bpm }) {
+  const arrowCount = beat["beats"].length;
+  const [isPlaying, setIsPlaying] = React.useState(false);
+  const [arrowIndex, setArrowIndex] = React.useState<number>(-1);
+
+  React.useEffect(() => {
+    let intervalId;
+    if (isPlaying) {
+      intervalId = setInterval(function () {
+        setArrowIndex((index) => (index + 1) % arrowCount);
+      }, (60 * 1000 * 4) / (bpm * arrowCount));
+    }
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  });
+
+  const handleStartStop = () => {
+    setIsPlaying((prevState) => !prevState);
+  };
+
   return (
     <Card className="beatsCard">
       <CardContent>
-        <p>Beats for {beat["name"]}</p>
-        {/* <p style={{color: 'red'}}>{beat['beats']}</p> */}
+        <p>
+          Beats for {beat["name"]}
+          <span className="startButton">
+            <IconButton
+              aria-label="fingerprint"
+              color="secondary"
+              onClick={handleStartStop}
+            >
+              {isPlaying ? (
+                <FontAwesomeIcon icon={icon({ name: "stop" })} />
+              ) : (
+                <FontAwesomeIcon icon={icon({ name: "play" })} />
+              )}
+            </IconButton>
+          </span>
+        </p>
 
         <div className="arrowContainer">
-          {beat["beats"].map((arrow) => (
-            <div key={arrow} className="arrow">
+          {beat["beats"].map((arrow, index) => (
+            <div
+              key={`${arrow}-${index}`}
+              className={"arrow" + (index === arrowIndex ? " arrowActive" : "")}
+            >
               {arrow === "up" && (
                 <FontAwesomeIcon icon={icon({ name: "arrow-up" })} />
               )}

@@ -11,25 +11,30 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormHelperText from "@mui/material/FormHelperText";
 import knownBpms from "../models/Bpms";
 
-function Metronome({ metronomeBpm }) {
+function Metronome({ metronomeBpm, changeBpm }) {
   const maxBpm = 218;
   const [bpm, setBpm] = React.useState<number>(metronomeBpm);
 
+  const setNewBpm = (bpm) => {
+    changeBpm(bpm);
+    setBpm(bpm);
+  };
+
   const handleSliderChange = (event: Event, newBpm: number | number[]) => {
     if (typeof newBpm === "number") {
-      setBpm(newBpm);
+        setNewBpm(newBpm);
     }
   };
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setBpm(event.target.value === "" ? 0 : Number(event.target.value));
+    setNewBpm(event.target.value === "" ? 0 : Number(event.target.value));
   };
 
   const handleBlur = () => {
     if (bpm < 0) {
-      setBpm(0);
+      setNewBpm(0);
     } else if (bpm > maxBpm) {
-      setBpm(maxBpm);
+      setNewBpm(maxBpm);
     }
   };
 

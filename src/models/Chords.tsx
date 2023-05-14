@@ -1,10 +1,12 @@
-const chords = {
-    'C': {
-    frets: [-1, 3, 2, 0, 1, 0],
-    fingers: [0, 3, 2, 0, 1, 0],
-    barres: [1],
-    capo: false,
- }
-}
+import chordsData from "./chords.json";
+
+const chordsList = Object.values(chordsData["chords"]).flat();
+
+const chords = chordsList.reduce((hash, chordData) => {
+  return {
+    ...hash,
+    [chordData["key"] + chordData["suffix"]]: chordData["positions"],
+  };
+}, {});
 
 export default chords;

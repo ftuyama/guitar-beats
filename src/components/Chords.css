@@ -1,0 +1,9 @@
+.chordCard {
+  background-color: #606b76 !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .chordCard {
+    width: 35vh;
+  }
+}

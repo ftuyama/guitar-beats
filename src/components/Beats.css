@@ -1,6 +1,9 @@
 .arrow {
     margin: 8px;
-    /* color: #e67e22; */
+}
+
+.arrowActive {
+    color: #e67e22;
 }
 
 .arrowContainer {
@@ -16,4 +19,8 @@
     margin: 16px;
     min-width: 275px;
     padding: 8px 32px;
+}
+
+.startButton {
+    margin-left: 8px;
 }
